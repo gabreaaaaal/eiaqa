@@ -1,0 +1,40 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink; /* Entire page background is now pink */
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height for a hero section */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically if needed */
+    overflow: hidden; /* Prevents overflow if image is larger */
+}
+
+.hero-image {
+    width: 50%; /* Adjust this percentage for the "right size" – e.g., 50% for half-width, or set to a fixed px value like 400px */
+    max-width: 600px; /* Prevents it from getting too large on bigger screens */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fits nicely without distortion */
+}
+
+.hero-text {
+    position: absolute; /* Overlays the text on top of the image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text perfectly over the image */
+    color: white; /* Assuming a dark image; adjust for contrast */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for readability */
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin: 0;
+}
